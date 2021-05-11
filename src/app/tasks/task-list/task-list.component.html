@@ -1,0 +1,18 @@
+<div>
+    <form action="">
+        <button (click)="getTarefas">
+            Carregar tarefas
+        </button>
+
+        <ul>
+            <li *ngFor="let tarefa of tarefas">
+
+                {{tarefa.id}}:
+                {{tarefa.descricao}}
+                <button (click)="deleteTarefa(tarefa.id)">
+                    Excluir tarefa
+                </button>
+            </li>
+        </ul>
+    </form>
+</div>
